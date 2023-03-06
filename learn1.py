@@ -68,4 +68,20 @@ def findsum(*args): # we can rename *args as *whatever_you_want
         sum += int(i)
     print(sum)
 findsum(1,2,3,4,'5','7')
+#output is 22 as expected
 
+'''
+KWARGS: stands for keyword arguments
+
+**kwargs is used to pass any number of keyword arguments to a function.
+the ** is important, kwargs is simply a keyword used, we can use any other word instead.
+
+
+'''
+def my_function(required_arg, **kwargs):
+    optional_arg1 = kwargs.get('optional_arg1', None)
+    optional_arg2 = kwargs.get('optional_arg2', None)
+    # Do something with the arguments
+    
+#** kwargs will be a dictionary of keyword arguments with their values.
+#
